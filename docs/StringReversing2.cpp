@@ -5,14 +5,10 @@ using namespace std;
  
 void reverseStr(char* ch, char *temp) {
     if(ch==NULL)return;
-    
-    reverseStr( strtok( NULL , " " ),temp );  
-	//Recursive method for reversing sentence.
+    reverseStr( strtok( NULL , " " ),temp );
     cout << ch << " ";
     strcat(temp,ch);
  	strcat(temp," ");
- 	//puts(temp);
- 	//cout << "\n";
 }
  
 int main() {
@@ -22,10 +18,3 @@ int main() {
   	puts(temp); 
     return 0;
 }
-
-/*char string[80];
-  	strcpy (string,"these ");
-  	strcat (string,"strings ");
-  	strcat (string,"are ");
-  	strcat (string,"concatenated.");
-  	puts (string);*/
