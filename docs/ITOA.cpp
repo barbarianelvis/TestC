@@ -1,6 +1,7 @@
 #include <ctype.h>
 #include <stdio.h>
 void      itoa (int n,char s[]);
+using namespace std
 
 int main(void ){   
 	int n;
