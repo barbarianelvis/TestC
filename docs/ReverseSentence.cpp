@@ -11,10 +11,8 @@ int StringContainsChar(const char *str, char c)
     }
     return 0;
 }
-// for TOKEN1,
-// "TOKEN1 TOKEN2 TOKEN3"
-//  ^     ^
-//  start end
+
+//reverse function
 void reverse(char *dst, const char *src, const char *delimiter)
 {
     int dst_len = 0;
