@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
-
 typedef struct node{
  	int data;
  	struct node *next;
@@ -15,9 +14,9 @@ static void display();
 static int minimum(node *temp);
 static node* reverse_recur(node *x,node *y);
 
+//execute linked list
 int main(void)
 {
-
 	while(1){
 
   		int sel;
@@ -57,7 +56,7 @@ int main(void)
 
  	return 0;
 }
-
+//push function
 static void push(int num){
 
  	node *temp;
@@ -68,7 +67,7 @@ static void push(int num){
  	top = temp;
 
 }
-
+//pop function
 static void pop(){
 
  	if(top!=NULL){
