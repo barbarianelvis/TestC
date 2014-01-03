@@ -2,6 +2,7 @@
 #include <cstdlib>
 using namespace std;
 
+//queue class declaration
 class Queue
 {
       private:
@@ -48,7 +49,7 @@ class Queue
              }
 };
 
-
+//execute
 int main()
 {
     Queue buff1(15);
