@@ -1,7 +1,7 @@
 #include <ctype.h>
 #include <stdio.h>
 void      itoa (int n,char s[]);
-//atoi
+
 int main(void ){   
 	int n;
 	char s[100];
@@ -11,7 +11,7 @@ int main(void ){
     itoa (n,s);
 	return 0;
 }
-
+//ATOI function
 void itoa (int n,char s[]){
 	int i,j,sign;
 	if((sign=n)<0)//¬ö¿ý²Å¸¹ 

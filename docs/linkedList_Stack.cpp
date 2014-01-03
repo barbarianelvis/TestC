@@ -18,7 +18,6 @@ static node* reverse_recur(node *x,node *y);
 int main(void)
 {
 	while(1){
-
   		int sel;
   		printf("[Stack]\t(1)push (2)pop (3)display (4)min (5)reverse >> ");
   		if(scanf("%d",&sel)==EOF) break;
@@ -53,7 +52,6 @@ int main(void)
  	}
  //end
  	printf("Exit Program.\n");
-
  	return 0;
 }
 //push function

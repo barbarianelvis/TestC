@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <string.h>
 using namespace std;
-
+//String reverse
 int main(){
 	char str[10] = "1234567";
     char *a, *b, c;
