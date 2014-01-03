@@ -11,8 +11,6 @@ int main(){
 		sum = (str[size-i-2]-'0') + sum*10;
 	}
 	cout << sum << endl; 
-	//itoa(num, str, 10); 
-	//printf("The number num is %d and the string str is %s. \n" , num, str); 
 	
 	system("pause");
 	return 0;
