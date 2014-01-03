@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
-
 class Stack{
 	private:
 		int size;

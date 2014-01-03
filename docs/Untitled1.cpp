@@ -9,8 +9,8 @@ int main() {
     ball2.radius = 10.0;
     
     printf("ball1: %s,\t%.2f\n", ball1.color, ball1.radius);
-    printf("ball2: %s,\t%.2f\n", ball2.color, ball2.radius);    
-    
-    //system("pause");        
+    printf("ball2: %s,\t%.2f\n", ball2.color, ball2.radius);  
+	  
+	system("pause");        
     return 0;
 }
