@@ -8,6 +8,7 @@ int main(void ){
 	return 0;
 }
 
+// ATOI function
 int atoi (char s[]){
 	int i,n,sign;
 	for(i=0;isspace(s[i]);i++)//¸õªÅ¥Õ²Å
