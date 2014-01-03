@@ -2,6 +2,7 @@
 #include <stdio.h>
 int atoi (char s[]);
 
+//Execute
 int main(void ){   
 	char s[10] = "789";
 	printf("integer=%d\n",atoi(s));
