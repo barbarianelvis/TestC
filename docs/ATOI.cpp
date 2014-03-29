@@ -2,14 +2,13 @@
 #include <stdio.h>
 int atoi (char s[]);
 
-//Execute
 int main(void ){   
 	char s[10] = "789";
 	printf("integer=%d\n",atoi(s));
 	return 0;
 }
 
-// ATOI function
+//atoi function yeah
 int atoi (char s[]){
 	int i,n,sign;
 	for(i=0;isspace(s[i]);i++)//¸õªÅ¥Õ²Å
