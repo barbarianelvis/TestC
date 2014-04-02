@@ -1,7 +1,7 @@
 #include <iostream>
 #include <numeric>
 #include <cstdlib>
-#include <iomanip> 
+ 
 using namespace std;
 
 int gcd(int a, int b){
@@ -17,27 +17,32 @@ int gcd(int a, int b){
 
 int lcm(int a, int b){
     int temp = gcd(a, b);
-    return temp ? (a / temp * b) : 0;
+    return temp?( a / temp*b ):0;
 }
 
 int main(){
 	//Setup the parameters of indivisual traffic streams
 	//Type in your own periods
-	int p0 = 3,
-		p1 = 2,
-		p2 = 6,
-		p3 = 11,
-		p4 = 9;
-	int dataSize[10];
+	int pd0 = 2,
+		pd1 = 3,
+		pd2 = 4,
+		pd3 = 6,
+		pd4 = 9;
+	int dataSize[10] = { 3, 6, 10, 15, 20 };
+	
 	//Compute GCD&LCM for all traffic streams
-	int period[] = { p0, p1, p2, p3, p4 };
+	int period[] = { pd0, pd1, pd2, pd3, pd4 };
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
-	int arrayG[5] = { 0, 0, 0, 0, 0 };
-	//Setup the multiarray for store multiple classes
-    double Pmin[5][5] = {0};
+	
+	int x0[36] = {0}, x1[36] = {0}, x2[36] = {0}, x3[36] = {0}, x4[36] = {0}, X[36] = {0}, ActiveTime = 0;
+	
+	//Setup the multiarray for storing multiple classes
+    int Pmin[5][5] = {0};
+    
 	//Setup the check list array for store multiple classes
     int checkList[5] = {1,1,1,1,1};
-    double L = accumulate( period, period + 4, 1, lcm);
+    int L = accumulate ( period, period+5, 1, lcm );
+    
     while ( i < length ){
     	if (i==0){
     		G = gcd( period[0],period[1] );
@@ -48,7 +53,8 @@ int main(){
     	i++;
     }
     
-    for ( i=1; i < length; i++){
+    //BubbleSorting
+    /*for ( i=1; i < length; i++){
     	for (int j=0; j<i; j++){
     		if ( period[j] > period[i] ){
     			temp = period[i];
@@ -56,7 +62,7 @@ int main(){
     			period[j] = temp;
     		}
     	}
-    }
+    }*/
     
     cout << "The array of all periods is "; 
     for ( i=0; i < length; i++ ){
@@ -86,14 +92,62 @@ int main(){
     		shift = 0;
     		m = 0;
     	}
-    	if (i == length-1 && checkList[length-1]==1){
-    		Pmin[k][0] = period[i];
-    	}
+    	if (i == length-1 && checkList[length-1]==1)
+    		{Pmin[k][0] = period[i];}
+    	if (checkList[0]==0 && checkList[1]==0 && checkList[2]==0 && checkList[3]==0 && checkList[4]==0)
+    		{break;}
     }
     
-    cout << Pmin[0][0] << Pmin[0][1] << Pmin[0][2] << endl;
-	cout << Pmin[1][0] << Pmin[1][1] << Pmin[1][2] << endl;
-	cout << Pmin[2][0] << Pmin[2][1] << Pmin[2][2] << endl; 
+    cout << Pmin[0][0] << "," << Pmin[0][1] << "," << Pmin[0][2] << endl;
+	cout << Pmin[1][0] << "," << Pmin[1][1] << "," << Pmin[1][2] << endl;
+	//cout << Pmin[2][0] << "," << Pmin[2][1] << "," << Pmin[2][2] << endl;
+	
+	//Setup each array with each period in class 1.
+	int of0=0, of1=0, of2=0, of3=0, of4=0;
+	
+	for (int d = 0; d < L; d++ ){
+    	if ( d % period[0] == 0)
+			{x0[d] = dataSize[0];} 
+    	else
+			{x0[d] = 0;} 
+	}
+	for (int d = 0; d < L; d++ ){
+    	if ( d % period[1] == 0)
+			{x1[d] = dataSize[1];} 
+    	else
+			{x1[d] = 0;} 
+	}
+	for (int d = 0; d < L; d++ ){
+    	if ( d % period[2] == 0)
+			{x2[d] = dataSize[2];} 
+    	else
+			{x2[d] = 0;} 
+	}
+	for (int d = 0; d < L; d++ ){
+    	if ( d % period[3] == 0)
+			{x3[d] = dataSize[3];} 
+    	else
+			{x3[d] = 0;} 
+	}
+	for (int d = 0; d < L; d++ ){
+    	if ( d % period[4] == 0)
+			{x4[d] = dataSize[4];} 
+    	else
+			{x4[d] = 0;} 
+	}
+	
+	for (int d = 0; d < L; d++ ){
+    	X[d] = x0[d]+x1[d]+x2[d]+x3[d]+x4[d];
+    	if ( X[d]>0 )
+    		{ActiveTime++;} 
+	}
+	
+	cout << "{ ";
+	for ( i =0; i < L; i++ )
+		cout << X[i] << " ";
+	cout << "}" << endl;
+	
+	cout << "ATR = " << double(ActiveTime)/double(L) << endl;
 	
 	//Calculate the GCD of each PeroidMin array.
 	//k = 0, i = 0;
@@ -109,4 +163,6 @@ int main(){
     
     system("pause");
     return 0;
-} 
+}
+
+

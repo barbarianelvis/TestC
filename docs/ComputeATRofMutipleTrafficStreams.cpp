@@ -24,9 +24,9 @@ int main(){
 	//Setup the parameters of indivisual traffic streams
 	//Type in your own periods
 	int p0 = 2,
-		p1 = 5,
-		p2 = 30,
-		p3 = 60;
+		p1 = 3,
+		p2 = 4,
+		p3 = 8;
 	//Compute GCD&LCM for all traffic streams
     int period[] = { p0, p1, p2, p3 };
 	int i = 0, G = 0;
@@ -46,11 +46,11 @@ int main(){
     
     //Setup the traffic streams for all periods
     //Length of each array should be the number of LCM
-	int x0[60] = {0}, x1[60] = {0}, x2[60] = {0}, x3[60] = {0}, x[60] = {0};
+	int x0[24] = {0}, x1[24] = {0}, x2[24] = {0}, x3[24] = {0}, x[24] = {0};
 	
 	//Length of ATR Array should be the number of p0*p1*p2
 	//Type in the length of ATR array 
-	double ATR[300] = {0}, j = 0;
+	double ATR[24] = {0}, j = 0;
 	int of0, of1, of2, of3 = p3, k = 0;
 	
 	//Setup the fourth stream as reference stream.
@@ -90,7 +90,7 @@ int main(){
 				for ( i = 0; i < L; i++ ){
 					//Sum of total traffic stream
 					x[i] = x0[i] + x1[i] + x2[i];// + x3[i];
-					if ( x0[i]==1 || x1[i]==1 || x2[i])// || x3[i]==1 )
+					if ( x0[i]==1 || x1[i]==1 || x2[i]==1 )// || x3[i]==1 )
 						j++;
 				}
 				ATR[k] = j/L;
@@ -106,7 +106,7 @@ int main(){
 					cout << "x[i] ={";
 					for ( i =0; i < L; i++ )
 						cout << x[i] << ",";
-					cout << "}" << endl; 
+					cout << "}" << endl;
 				}
 			}	
 		}
