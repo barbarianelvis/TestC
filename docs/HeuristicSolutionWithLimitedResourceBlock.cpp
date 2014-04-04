@@ -1,7 +1,6 @@
 #include <iostream>
 #include <numeric>
 #include <cstdlib>
- 
 using namespace std;
 
 int gcd(int a, int b){
@@ -18,6 +17,21 @@ int gcd(int a, int b){
 int lcm(int a, int b){
     int temp = gcd(a, b);
     return temp?( a / temp*b ):0;
+}
+
+int GenerateMixedUplinkArray(int order, int period[], int dataSize[], int of0, int of1, int of2, int of3,int of4){
+	int dataToTransmit = 0;
+	if ( order % period[0] == 0)
+		{dataToTransmit = dataToTransmit + dataSize[0];};
+	if ( order % period[1] == 0)
+		{dataToTransmit = dataToTransmit + dataSize[1];};
+	if ( order % period[2] == 0)
+		{dataToTransmit = dataToTransmit + dataSize[2];};
+	if ( order % period[3] == 0)
+		{dataToTransmit = dataToTransmit + dataSize[3];};
+	if ( order % period[4] == 0)
+		{dataToTransmit = dataToTransmit + dataSize[4];};
+	return dataToTransmit;
 }
 
 int main(){
@@ -52,17 +66,6 @@ int main(){
     		G = gcd( G, period[i] );
     	i++;
     }
-    
-    //BubbleSorting
-    /*for ( i=1; i < length; i++){
-    	for (int j=0; j<i; j++){
-    		if ( period[j] > period[i] ){
-    			temp = period[i];
-    			period[i] = period[j];
-    			period[j] = temp;
-    		}
-    	}
-    }*/
     
     cout << "The array of all periods is "; 
     for ( i=0; i < length; i++ ){
@@ -106,44 +109,14 @@ int main(){
 	int of0=0, of1=0, of2=0, of3=0, of4=0;
 	
 	for (int d = 0; d < L; d++ ){
-    	if ( d % period[0] == 0)
-			{x0[d] = dataSize[0];} 
-    	else
-			{x0[d] = 0;} 
-	}
-	for (int d = 0; d < L; d++ ){
-    	if ( d % period[1] == 0)
-			{x1[d] = dataSize[1];} 
-    	else
-			{x1[d] = 0;} 
-	}
-	for (int d = 0; d < L; d++ ){
-    	if ( d % period[2] == 0)
-			{x2[d] = dataSize[2];} 
-    	else
-			{x2[d] = 0;} 
-	}
-	for (int d = 0; d < L; d++ ){
-    	if ( d % period[3] == 0)
-			{x3[d] = dataSize[3];} 
-    	else
-			{x3[d] = 0;} 
-	}
-	for (int d = 0; d < L; d++ ){
-    	if ( d % period[4] == 0)
-			{x4[d] = dataSize[4];} 
-    	else
-			{x4[d] = 0;} 
-	}
-	
-	for (int d = 0; d < L; d++ ){
-    	X[d] = x0[d]+x1[d]+x2[d]+x3[d]+x4[d];
-    	if ( X[d]>0 )
+    	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
+    	
+    	if ( X[d] > 0 )
     		{ActiveTime++;} 
 	}
 	
 	cout << "{ ";
-	for ( i =0; i < L; i++ )
+	for ( i =0; i < L; i++ ) 
 		cout << X[i] << " ";
 	cout << "}" << endl;
 	
@@ -155,8 +128,7 @@ int main(){
 	/*while ( i < length ){
     	if (Pmin[k][i+1]!=0){
     		G = gcd( Pmin[k][i],Pmin[k][i+1] );
-    	}
-    	
+    	}	
     	i++;
     	k++; 
     }*/
@@ -164,5 +136,8 @@ int main(){
     system("pause");
     return 0;
 }
+
+
+
 
 
