@@ -1,7 +1,14 @@
 #include <iostream>
 #include <numeric>
 #include <cstdlib>
+
 using namespace std;
+
+struct app{
+	int period;
+	int dataSize;
+	struct app *next;
+};
 
 int gcd(int a, int b){
     while(1){
@@ -21,40 +28,46 @@ int lcm(int a, int b){
 
 int GenerateMixedUplinkArray(int order, int period[], int dataSize[], int of0, int of1, int of2, int of3,int of4){
 	int dataToTransmit = 0;
-	if ( order % period[0] == 0)
+	if ( (order+of0) % period[0] == 0)
 		{dataToTransmit = dataToTransmit + dataSize[0];};
-	if ( order % period[1] == 0)
+	if ( (order+of1) % period[1] == 0)
 		{dataToTransmit = dataToTransmit + dataSize[1];};
-	if ( order % period[2] == 0)
+	if ( (order+of2) % period[2] == 0)
 		{dataToTransmit = dataToTransmit + dataSize[2];};
-	if ( order % period[3] == 0)
+	if ( (order+of3) % period[3] == 0)
 		{dataToTransmit = dataToTransmit + dataSize[3];};
-	if ( order % period[4] == 0)
+	if ( (order+of4) % period[4] == 0)
 		{dataToTransmit = dataToTransmit + dataSize[4];};
 	return dataToTransmit;
 }
 
 int main(){
-	//Setup the parameters of indivisual traffic streams
-	//Type in your own periods
-	int pd0 = 2,
-		pd1 = 3,
-		pd2 = 4,
-		pd3 = 6,
-		pd4 = 9;
-	int dataSize[10] = { 3, 6, 10, 15, 20 };
+	//Setup indivisual applications
+	app App0, App1, App2, App3, App4;
+	//Type in your own periods, data size, and the threshold.
+	App0.period = 2,
+	App1.period = 3,
+	App2.period = 4,
+	App3.period = 6,
+	App4.period = 9;
 	
-	//Compute GCD&LCM for all traffic streams
-	int period[] = { pd0, pd1, pd2, pd3, pd4 };
+	App0.dataSize = 3;
+	App1.dataSize = 6;
+	App2.dataSize = 10;
+	App3.dataSize = 15;
+	App4.dataSize = 20;
+	
+	int threshold = 50;
+	//=========================================================
+	int period[] = { App0.period, App1.period, App2.period, App3.period, App4.period };
+	//int dataSize[5] = { App0.dataSize, App1.dataSize, App2.dataSize, App3.dataSize, App4.dataSize };
+	
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
+	int X[36] = {0}, ActiveTime = 0;
+	//Compute GCD&LCM for all traffic streams
 	
-	int x0[36] = {0}, x1[36] = {0}, x2[36] = {0}, x3[36] = {0}, x4[36] = {0}, X[36] = {0}, ActiveTime = 0;
 	
-	//Setup the multiarray for storing multiple classes
-    int Pmin[5][5] = {0};
-    
-	//Setup the check list array for store multiple classes
-    int checkList[5] = {1,1,1,1,1};
+	
     int L = accumulate ( period, period+5, 1, lcm );
     
     while ( i < length ){
@@ -76,6 +89,50 @@ int main(){
 	}
     cout << "The LCM of all periods is " << L << endl;
     cout << "The GCD of all periods is " << G << endl;
+
+	
+	//Setup each array with each period via offset = 0.
+	int of0=0, of1=0, of2=0, of3=0, of4=0;
+	int gap = 0;
+	for (int d = 0; d < L; d++ ){
+    	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
+    	if ( X[d] > 0 )
+    		{ActiveTime++;}
+    	if (X[d] > threshold){
+				
+		}
+	}
+	
+	cout << "{ ";
+	for ( i =0; i < L; i++ ) 
+		cout << X[i] << " ";
+	cout << "}" << endl;
+	
+	cout << "ATR = " << double(ActiveTime)/double(L) << endl;
+	
+	//Calculate the GCD of each PeroidMin array.
+	//k = 0, i = 0;
+	//int arrayG[5] = 0;
+	/*while ( i < length ){
+    	if (Pmin[k][i+1]!=0){
+    		G = gcd( Pmin[k][i],Pmin[k][i+1] );
+    	}	
+    	i++;
+    	k++; 
+    }*/
+    
+    system("pause");
+    return 0;
+}
+
+
+
+    /*
+    //Setup the multi-array for storing multiple classes
+    //int Pmin[5][5] = {0};
+    
+	//Setup the check list array for store multiple classes
+    int checkList[5] = {1,1,1,1,1};
     
 	//Classify multiple period with same GCD using checkList[5];
 	int k = 0, shift = 0, m = 0;
@@ -104,40 +161,7 @@ int main(){
     cout << Pmin[0][0] << "," << Pmin[0][1] << "," << Pmin[0][2] << endl;
 	cout << Pmin[1][0] << "," << Pmin[1][1] << "," << Pmin[1][2] << endl;
 	//cout << Pmin[2][0] << "," << Pmin[2][1] << "," << Pmin[2][2] << endl;
-	
-	//Setup each array with each period in class 1.
-	int of0=0, of1=0, of2=0, of3=0, of4=0;
-	
-	for (int d = 0; d < L; d++ ){
-    	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
-    	
-    	if ( X[d] > 0 )
-    		{ActiveTime++;} 
-	}
-	
-	cout << "{ ";
-	for ( i =0; i < L; i++ ) 
-		cout << X[i] << " ";
-	cout << "}" << endl;
-	
-	cout << "ATR = " << double(ActiveTime)/double(L) << endl;
-	
-	//Calculate the GCD of each PeroidMin array.
-	//k = 0, i = 0;
-	//int arrayG[5] = 0;
-	/*while ( i < length ){
-    	if (Pmin[k][i+1]!=0){
-    		G = gcd( Pmin[k][i],Pmin[k][i+1] );
-    	}	
-    	i++;
-    	k++; 
-    }*/
-    
-    system("pause");
-    return 0;
-}
-
-
+	*/
 
 
 
