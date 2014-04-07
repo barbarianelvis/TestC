@@ -7,7 +7,8 @@ using namespace std;
 struct app{
 	int period;
 	int dataSize;
-	struct app *next;
+	bool isUsed;
+	//struct app *next;
 };
 
 int gcd(int a, int b){
@@ -41,6 +42,22 @@ int GenerateMixedUplinkArray(int order, int period[], int dataSize[], int of0, i
 	return dataToTransmit;
 }
 
+int findGCDOffset(int localPeriod, int period[]){
+	int temp = 0;
+	int G = 0;
+	for ( int t=0; t < sizeof(period)/4; t++ ){
+		if ( localPeriod == period[t] )
+			{ t++; }
+		else{
+			G = gcd ( localPeriod, period[t] );
+			if ( G !=1 && G > temp )
+				{ temp = G;}
+		}
+	}
+	cout << "Offset is " << temp << " for refined uplink.\n";
+	return temp;
+}
+
 int main(){
 	//Setup indivisual applications
 	app App0, App1, App2, App3, App4;
@@ -59,15 +76,19 @@ int main(){
 	
 	int threshold = 50;
 	//=========================================================
+	App0.isUsed = false;
+	App1.isUsed = false;
+	App2.isUsed = false;
+	App3.isUsed = false;
+	App4.isUsed = false;
+	
 	int period[] = { App0.period, App1.period, App2.period, App3.period, App4.period };
-	//int dataSize[5] = { App0.dataSize, App1.dataSize, App2.dataSize, App3.dataSize, App4.dataSize };
+	int dataSize[5] = { App0.dataSize, App1.dataSize, App2.dataSize, App3.dataSize, App4.dataSize };
 	
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
 	int X[36] = {0}, ActiveTime = 0;
+	
 	//Compute GCD&LCM for all traffic streams
-	
-	
-	
     int L = accumulate ( period, period+5, 1, lcm );
     
     while ( i < length ){
@@ -80,7 +101,7 @@ int main(){
     	i++;
     }
     
-    cout << "The array of all periods is "; 
+    cout << "The periods of all apps are "; 
     for ( i=0; i < length; i++ ){
     	if (i == length-1)
     		cout << period[i] << "." << endl;
@@ -89,8 +110,7 @@ int main(){
 	}
     cout << "The LCM of all periods is " << L << endl;
     cout << "The GCD of all periods is " << G << endl;
-
-	
+    
 	//Setup each array with each period via offset = 0.
 	int of0=0, of1=0, of2=0, of3=0, of4=0;
 	int gap = 0;
@@ -99,7 +119,26 @@ int main(){
     	if ( X[d] > 0 )
     		{ActiveTime++;}
     	if (X[d] > threshold){
-				
+			gap = X[d] - threshold;
+			if ( App4.isUsed == false ){
+				of4 = findGCDOffset( App4.period, period );
+				App4.isUsed = true;
+			}
+			else if ( App3.isUsed == false ){
+				of3 = findGCDOffset( App3.period, period );
+				App3.isUsed = true;
+			}
+			else if ( App2.isUsed == false ){
+				of2 = findGCDOffset( App2.period, period );
+				App2.isUsed = true;
+			}
+			else if ( App1.isUsed == false ){
+				of1 = findGCDOffset( App1.period, period );
+				App1.isUsed = true;
+			}
+			else 
+				break;
+			X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
 		}
 	}
 	
