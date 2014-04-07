@@ -54,7 +54,7 @@ int findGCDOffset(int localPeriod, int period[]){
 				{ temp = G;}
 		}
 	}
-	cout << "Offset is " << temp << " for refined uplink.\n";
+	//cout << "Offset is " << temp << " for refined uplink.\n";
 	return temp;
 }
 
@@ -68,7 +68,7 @@ int main(){
 	App3.period = 6,
 	App4.period = 9;
 	
-	App0.dataSize = 3;
+	App0.dataSize = 20;
 	App1.dataSize = 6;
 	App2.dataSize = 10;
 	App3.dataSize = 15;
@@ -116,24 +116,44 @@ int main(){
 	int gap = 0;
 	for (int d = 0; d < L; d++ ){
     	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
+	}
+	
+	int originalPower = 0;
+	cout << "\nThe original uplink array:\n{ ";
+	for ( i =0; i < L; i++ ){
+		cout << X[i] << " ";
+		if (X[i] > 50)
+			{originalPower = originalPower + X[i]*13+0.4;}
+		else
+			{originalPower = originalPower + X[i]*7.7+1.6;}
+	} 
+	cout << "}" << endl;
+	cout << "Total power consumption: " << originalPower << "mW.\n";
+	
+	for (int d = 0; d < L; d++ ){
+    	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
     	if ( X[d] > 0 )
     		{ActiveTime++;}
-    	if (X[d] > threshold){
+    	while (X[d] > threshold){
 			gap = X[d] - threshold;
 			if ( App4.isUsed == false ){
-				of4 = findGCDOffset( App4.period, period );
+				of4 = period[4] - findGCDOffset( App4.period, period );
+				//cout << "App 5 is chosen to modify.\n";
 				App4.isUsed = true;
 			}
 			else if ( App3.isUsed == false ){
-				of3 = findGCDOffset( App3.period, period );
+				of3 = period[3] - findGCDOffset( App3.period, period );
+				//cout << "App 4 is chosen to modify.\n";
 				App3.isUsed = true;
 			}
 			else if ( App2.isUsed == false ){
-				of2 = findGCDOffset( App2.period, period );
+				of2 = period[2] - findGCDOffset( App2.period, period );
+				//cout << "App 3 is chosen to modify.\n";
 				App2.isUsed = true;
 			}
 			else if ( App1.isUsed == false ){
-				of1 = findGCDOffset( App1.period, period );
+				of1 = period[1] - findGCDOffset( App1.period, period );
+				//cout << "App 2 is chosen to modify.\n";
 				App1.isUsed = true;
 			}
 			else 
@@ -142,10 +162,18 @@ int main(){
 		}
 	}
 	
-	cout << "{ ";
-	for ( i =0; i < L; i++ ) 
+	int modifiedPower = 0;
+	cout << "\nThe refined uplink array:\n{ ";
+	for ( i =0; i < L; i++ ){ 
 		cout << X[i] << " ";
+		if (X[i] > 50)
+			{modifiedPower = modifiedPower + X[i]*13+0.4;}
+		else
+			{modifiedPower = modifiedPower + X[i]*7.7+1.6;}
+	} 
 	cout << "}" << endl;
+	cout << "Total power consumption: " << modifiedPower << "mW.\n";
+	cout << "Imroved Power efficiency: " << 100*double(originalPower-modifiedPower)/ double(originalPower) << "%" << endl;
 	
 	cout << "ATR = " << double(ActiveTime)/double(L) << endl;
 	
@@ -160,7 +188,7 @@ int main(){
     	k++; 
     }*/
     
-    system("pause");
+    //system("pause");
     return 0;
 }
 
