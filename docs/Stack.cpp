@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
+
 //Stack declaration 
 class Stack{
       private:
@@ -32,7 +33,7 @@ class Stack{
                  }
              }
 };
-//Execute
+//Execute main function
 int main(){
     Stack stk(5);
     stk.push(52);
