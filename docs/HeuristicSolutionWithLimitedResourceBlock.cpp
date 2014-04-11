@@ -1,6 +1,7 @@
 #include <iostream>
 #include <numeric>
 #include <cstdlib>
+#include <math.h>
 
 using namespace std;
 
@@ -43,14 +44,14 @@ int GenerateMixedUplinkArray(int order, int period[], int dataSize[], int of0, i
 }
 
 int findGCDOffset(int localPeriod, int period[]){
-	int temp = 0;
+	int temp = localPeriod;
 	int G = 0;
 	for ( int t=0; t < sizeof(period)/4; t++ ){
 		if ( localPeriod == period[t] )
 			{ t++; }
 		else{
 			G = gcd ( localPeriod, period[t] );
-			if ( G !=1 && G > temp )
+			if ( G !=1 && G <= temp )
 				{ temp = G;}
 		}
 	}
@@ -62,19 +63,19 @@ int main(){
 	//Setup indivisual applications
 	app App0, App1, App2, App3, App4;
 	//Type in your own periods, data size, and the threshold.
-	App0.period = 2,
-	App1.period = 3,
-	App2.period = 4,
-	App3.period = 6,
-	App4.period = 9;
+	App0.period = 3,
+	App1.period = 5,
+	App2.period = 10,
+	App3.period = 15,
+	App4.period = 30;
 	
-	App0.dataSize = 20;
-	App1.dataSize = 6;
-	App2.dataSize = 10;
-	App3.dataSize = 15;
-	App4.dataSize = 20;
+	App0.dataSize = 8;
+	App1.dataSize = 10;
+	App2.dataSize = 15;
+	App3.dataSize = 20;
+	App4.dataSize = 25;
 	
-	int threshold = 50;
+	int threshold = 60;
 	//=========================================================
 	App0.isUsed = false;
 	App1.isUsed = false;
@@ -86,7 +87,7 @@ int main(){
 	int dataSize[5] = { App0.dataSize, App1.dataSize, App2.dataSize, App3.dataSize, App4.dataSize };
 	
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
-	int X[36] = {0}, ActiveTime = 0;
+	int X[60] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
 	
 	//Compute GCD&LCM for all traffic streams
     int L = accumulate ( period, period+5, 1, lcm );
@@ -114,44 +115,46 @@ int main(){
 	//Setup each array with each period via offset = 0.
 	int of0=0, of1=0, of2=0, of3=0, of4=0;
 	int gap = 0;
-	for (int d = 0; d < L; d++ ){
+	for (int d = 0; d < lengthX; d++ ){
     	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
 	}
 	
-	int originalPower = 0;
+	double originalPower = 0;
 	cout << "\nThe original uplink array:\n{ ";
-	for ( i =0; i < L; i++ ){
+	for ( i =0; i < lengthX; i++ ){
 		cout << X[i] << " ";
-		if (X[i] > 50)
-			{originalPower = originalPower + X[i]*13+0.4;}
-		else
-			{originalPower = originalPower + X[i]*7.7+1.6;}
+		if (X[i] != 0){
+			if (X[i] > threshold)
+				{originalPower = originalPower + 13*( 10*log(X[i]) -5 ) + 0.4;}
+			else
+				{originalPower = originalPower + 7.7*( 10*log(X[i]) -5 ) + 1.6;}
+		}
 	} 
 	cout << "}" << endl;
 	cout << "Total power consumption: " << originalPower << "mW.\n";
 	
-	for (int d = 0; d < L; d++ ){
+	for (int d = 0; d < lengthX; d++ ){
     	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
     	if ( X[d] > 0 )
     		{ActiveTime++;}
     	while (X[d] > threshold){
 			gap = X[d] - threshold;
-			if ( App4.isUsed == false ){
+			if ( App4.isUsed == false && (d%App4.period)==0 ){
 				of4 = period[4] - findGCDOffset( App4.period, period );
 				//cout << "App 5 is chosen to modify.\n";
 				App4.isUsed = true;
 			}
-			else if ( App3.isUsed == false ){
+			else if ( App3.isUsed == false && (d%App3.period)==0 ){
 				of3 = period[3] - findGCDOffset( App3.period, period );
 				//cout << "App 4 is chosen to modify.\n";
 				App3.isUsed = true;
 			}
-			else if ( App2.isUsed == false ){
+			else if ( App2.isUsed == false && (d%App2.period)==0 ){
 				of2 = period[2] - findGCDOffset( App2.period, period );
 				//cout << "App 3 is chosen to modify.\n";
 				App2.isUsed = true;
 			}
-			else if ( App1.isUsed == false ){
+			else if ( App1.isUsed == false && (d%App1.period)==0 ){
 				of1 = period[1] - findGCDOffset( App1.period, period );
 				//cout << "App 2 is chosen to modify.\n";
 				App1.isUsed = true;
@@ -162,20 +165,22 @@ int main(){
 		}
 	}
 	
-	int modifiedPower = 0;
+	double modifiedPower = 0;
 	cout << "\nThe refined uplink array:\n{ ";
-	for ( i =0; i < L; i++ ){ 
+	for ( i =0; i < lengthX; i++ ){ 
 		cout << X[i] << " ";
-		if (X[i] > 50)
-			{modifiedPower = modifiedPower + X[i]*13+0.4;}
-		else
-			{modifiedPower = modifiedPower + X[i]*7.7+1.6;}
-	} 
+		if ( X[i] != 0 ){
+			if ( X[i] > threshold )
+				{modifiedPower = modifiedPower + 13*(-5 + 10*log(X[i]))+0.4;}
+			else
+				{modifiedPower = modifiedPower + 7.7*(-5 + 10*log(X[i]))+1.6;}
+		}
+	}
 	cout << "}" << endl;
 	cout << "Total power consumption: " << modifiedPower << "mW.\n";
-	cout << "Imroved Power efficiency: " << 100*double(originalPower-modifiedPower)/ double(originalPower) << "%" << endl;
+	cout << "Improved Power efficiency: " << 100*double(originalPower-modifiedPower)/ double(originalPower) << "%" << endl;
 	
-	cout << "ATR = " << double(ActiveTime)/double(L) << endl;
+	cout << "ATR = " << double(ActiveTime)/double(lengthX) << endl;
 	
 	//Calculate the GCD of each PeroidMin array.
 	//k = 0, i = 0;
