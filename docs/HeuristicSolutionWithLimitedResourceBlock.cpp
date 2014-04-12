@@ -63,19 +63,19 @@ int main(){
 	//Setup indivisual applications
 	app App0, App1, App2, App3, App4;
 	//Type in your own periods, data size, and the threshold.
-	App0.period = 3,
-	App1.period = 5,
-	App2.period = 10,
-	App3.period = 15,
-	App4.period = 30;
+	App0.period = 2,
+	App1.period = 3,
+	App2.period = 5,
+	App3.period = 6,
+	App4.period = 8;
 	
-	App0.dataSize = 8;
-	App1.dataSize = 10;
-	App2.dataSize = 15;
-	App3.dataSize = 20;
-	App4.dataSize = 25;
+	App0.dataSize = 2;
+	App1.dataSize = 3;
+	App2.dataSize = 5;
+	App3.dataSize = 8;
+	App4.dataSize = 10;
 	
-	int threshold = 60;
+	int threshold = 50;
 	//=========================================================
 	App0.isUsed = false;
 	App1.isUsed = false;
@@ -87,8 +87,9 @@ int main(){
 	int dataSize[5] = { App0.dataSize, App1.dataSize, App2.dataSize, App3.dataSize, App4.dataSize };
 	
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
-	int X[60] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
+	int X[120] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
 	
+	//========================================================= 
 	//Compute GCD&LCM for all traffic streams
     int L = accumulate ( period, period+5, 1, lcm );
     
@@ -111,7 +112,7 @@ int main(){
 	}
     cout << "The LCM of all periods is " << L << endl;
     cout << "The GCD of all periods is " << G << endl;
-    
+    //========================================================= 
 	//Setup each array with each period via offset = 0.
 	int of0=0, of1=0, of2=0, of3=0, of4=0;
 	int gap = 0;
@@ -125,9 +126,9 @@ int main(){
 		cout << X[i] << " ";
 		if (X[i] != 0){
 			if (X[i] > threshold)
-				{originalPower = originalPower + 13*( 10*log(X[i]) -5 ) + 0.4;}
+				{originalPower = originalPower + 61*( 10*log(X[i]) -5 ) + 0.52;}
 			else
-				{originalPower = originalPower + 7.7*( 10*log(X[i]) -5 ) + 1.6;}
+				{originalPower = originalPower + 4*( 10*log(X[i]) -5 ) + 1.2;}
 		}
 	} 
 	cout << "}" << endl;
@@ -141,26 +142,23 @@ int main(){
 			gap = X[d] - threshold;
 			if ( App4.isUsed == false && (d%App4.period)==0 ){
 				of4 = period[4] - findGCDOffset( App4.period, period );
-				//cout << "App 5 is chosen to modify.\n";
 				App4.isUsed = true;
 			}
 			else if ( App3.isUsed == false && (d%App3.period)==0 ){
 				of3 = period[3] - findGCDOffset( App3.period, period );
-				//cout << "App 4 is chosen to modify.\n";
 				App3.isUsed = true;
 			}
 			else if ( App2.isUsed == false && (d%App2.period)==0 ){
 				of2 = period[2] - findGCDOffset( App2.period, period );
-				//cout << "App 3 is chosen to modify.\n";
 				App2.isUsed = true;
 			}
 			else if ( App1.isUsed == false && (d%App1.period)==0 ){
 				of1 = period[1] - findGCDOffset( App1.period, period );
-				//cout << "App 2 is chosen to modify.\n";
 				App1.isUsed = true;
 			}
 			else 
 				break;
+			
 			X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
 		}
 	}
@@ -171,9 +169,9 @@ int main(){
 		cout << X[i] << " ";
 		if ( X[i] != 0 ){
 			if ( X[i] > threshold )
-				{modifiedPower = modifiedPower + 13*(-5 + 10*log(X[i]))+0.4;}
+				{modifiedPower = modifiedPower + 61*(-5 + 10*log(X[i])) + 0.52;}
 			else
-				{modifiedPower = modifiedPower + 7.7*(-5 + 10*log(X[i]))+1.6;}
+				{modifiedPower = modifiedPower + 4*(-5 + 10*log(X[i])) + 1.2;}
 		}
 	}
 	cout << "}" << endl;

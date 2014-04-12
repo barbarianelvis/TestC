@@ -24,50 +24,41 @@ int lcm(int a, int b){
 int main(){
 	//Setup the parameters of indivisual traffic streams
 	//Type in your own periods
-	int p0 = 3,
-		p1 = 5,
-		p2 = 10,
-		p3 = 15,
-		p4 = 30;
+	int p0 = 2,
+		p1 = 3,
+		p2 = 5,
+		p3 = 6,
+		p4 = 8;
 
-	int d0 = 8,
-		d1 = 10,
-		d2 = 15,
-		d3 = 20,
-		d4 = 25;
+	int d0 = 2,
+		d1 = 3,
+		d2 = 5,
+		d3 = 8,
+		d4 = 10;
 		
-	int threshold = 0;
+	int threshold = 50;
 
 	//Compute GCD&LCM for all traffic streams
 	int period[] = { p0, p1, p2, p3, p4 };
 	int i = 0, G = 0;
 	double L = accumulate(period, period + 5, 1, lcm);
 
-	while (i < sizeof(period) / 4){
-		if (i == 0){
-			G = gcd(period[0], period[1]);
-			i = 1;
-		}
-		else
-			G = gcd(G, period[i]);
-		i++;
-	}
 	cout << "The LCM of all periods is " << L << endl;
-	cout << "The GCD of all periods is " << G << endl;
+	//cout << "The GCD of all periods is " << G << endl;
 
 	//Setup the traffic streams for all periods
 	//Length of each array should be the number of LCM
-	int x0[30] = { 0 }, x1[30] = { 0 }, x2[30] = { 0 }, x3[30] = { 0 }, x4[30] = { 0 }, x[30] = { 0 };
+	int x0[120] = { 0 }, x1[120] = { 0 }, x2[120] = { 0 }, x3[120] = { 0 }, x4[120] = { 0 }, x[120] = { 0 };
 
-	//Length of ATR Array should be the number of p0*p1*p2
+	//Length of ATR Array should be the number of p0*p1*p2*p3
 	//Type in the length of ATR array 
-	double ATR[2250] = {0}, j = 0;
-	int Power[2250] = {0}, dataSize = 0;
+	double ATR[180] = {0}, j = 0;
+	double Power[180] = {0}, dataSize = 0;
 	int of0 = 0, of1 = 0, of2 = 0, of3 = 0, of4 = 0;
 	int k = 0;
 
 	//Setup the fourth stream as reference stream.
-	of4 = p4;
+	of4 = 0;
 	for (i = 0; i < L; i++){
 		if ((i + of4) % p4 == 0)
 			x4[i] = 1;
@@ -109,12 +100,16 @@ int main(){
 					}
 					//Compute the Active Time Ratio of all traffic streams
 					j = 0;
+					Power[k] = 0;
+					dataSize = 0;
+					
 					for (i = 0; i < L; i++){
 						x[i] = x0[i] + x1[i] + x2[i] + x3[i] + x4[i];
 						
 						if (x[i]>0){
 							j++;
 						}
+						
 						if (x0[i]==1)
 							dataSize = dataSize + d0;
 						if (x1[i]==1)
@@ -125,17 +120,28 @@ int main(){
 							dataSize = dataSize + d3;
 						if (x4[i]==1)
 							dataSize = dataSize + d4;
-						
-						if (dataSize > threshold){
-							Power[k] = 13*(-5 + log(dataSize))+0.4; 
+						//Compute transmission power.
+						if ( x[i] !=0 ){
+							if (dataSize > threshold){
+								Power[k] = Power[k] + 61*( -5 + 10*log(dataSize)) + 0.52;}
+							else{
+								Power[k] = Power[k] + 4*( -5 + 10*log(dataSize)) + 1.2;}
 						}
-						else{
-							Power[k] = 7.7*(-5 + log(dataSize))+1.6;
-						}
+						//Initialize.
+						dataSize = 0;
 						
 						if (i == (L - 1)){
 							ATR[k] = j / L;
+							if (Power[k] <= 4263.7){
+								cout << "Of0: " << of0 << " Of1: " << of1 << " Of2: " << of2 << " Of3: " << of3 << " Of4: " << of4 << endl;
+								cout << "ATR: " << ATR[k] << endl;
+								for ( i = 0; i < L; i++){
+									cout << x[i];
+								}
+								//cout << "Data size: " << dataSize << endl;
+							}
 							k++;
+							
 						}
 						
 					}
@@ -147,19 +153,35 @@ int main(){
 	double maxATR = ATR[0];
 	double minATR = ATR[0];
 	double sumATR = 0;
+	double maxPower = Power[0];
+	double minPower = Power[0];
+	double sumPower = 0;
+	//cout << "Power[0] = " << Power[0] << endl;
 
-	for (i = 0; i < sizeof(ATR) / 8; i++){
+	for (i = 0; i < sizeof(ATR)/8; i++){
 		if (ATR[i] > maxATR)
 			maxATR = ATR[i];
 		else if (ATR[i] < minATR)
 			minATR = ATR[i];
 		sumATR = ATR[i] + sumATR;
 	}
-	cout << "Size of ATR array: " << sizeof(ATR) / 8 << endl;
+	for (i = 0; i < sizeof(Power)/8; i++){
+		if (Power[i] > maxPower)
+			maxPower = Power[i];
+		else if (Power[i] < minPower)
+			minPower = Power[i];
+		sumPower = Power[i] + sumPower;
+	}
+	
+	
+	cout << "\nSize of ATR array: " << sizeof(ATR)/8 << endl;
 	cout << "Max ATR: " << maxATR << endl;
 	cout << "Min ATR: " << minATR << endl;
-	cout << "Avg ATR: " << sumATR / (sizeof(ATR) / 8) << endl;
-
+	cout << "Avg ATR: " << sumATR / (sizeof(Power)/8) << endl << endl;
+	cout << "Max Power: " << maxPower << endl;
+	cout << "Min Power: " << minPower << endl;
+	cout << "Avg Power: " << sumPower / (sizeof(Power)/8) << endl;
+	
 	system("pause");
 }
 
