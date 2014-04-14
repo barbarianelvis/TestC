@@ -25,18 +25,24 @@ int main(){
 	//Setup the parameters of indivisual traffic streams
 	//Type in your own periods
 	int p0 = 2,
-		p1 = 3,
-		p2 = 5,
-		p3 = 6,
-		p4 = 8;
+		p1 = 5,
+		p2 = 30,
+		p3 = 60,
+		p4 = 240;
 
-	int d0 = 2,
+	int d0 = 4,
 		d1 = 3,
-		d2 = 5,
+		d2 = 20,
 		d3 = 8,
-		d4 = 10;
+		d4 = 4;
 		
-	int threshold = 50;
+	int threshold = 26;
+	
+	double alphaH = 54;
+	double betaH = 1.5;
+	double alphaL = 7.2;
+	double betaL = 1.6;
+	double P0 = -4;
 
 	//Compute GCD&LCM for all traffic streams
 	int period[] = { p0, p1, p2, p3, p4 };
@@ -48,12 +54,12 @@ int main(){
 
 	//Setup the traffic streams for all periods
 	//Length of each array should be the number of LCM
-	int x0[120] = { 0 }, x1[120] = { 0 }, x2[120] = { 0 }, x3[120] = { 0 }, x4[120] = { 0 }, x[120] = { 0 };
+	int x0[240] = { 0 }, x1[240] = { 0 }, x2[240] = { 0 }, x3[240] = { 0 }, x4[240] = { 0 }, x[240] = { 0 };
 
 	//Length of ATR Array should be the number of p0*p1*p2*p3
 	//Type in the length of ATR array 
-	double ATR[180] = {0}, j = 0;
-	double Power[180] = {0}, dataSize = 0;
+	double ATR[18000] = {0}, j = 0;
+	double Power[18000] = {0}, dataSize = 0;
 	int of0 = 0, of1 = 0, of2 = 0, of3 = 0, of4 = 0;
 	int k = 0;
 
@@ -123,22 +129,29 @@ int main(){
 						//Compute transmission power.
 						if ( x[i] !=0 ){
 							if (dataSize > threshold){
-								Power[k] = Power[k] + 61*( -5 + 10*log(dataSize)) + 0.52;}
+								Power[k] = Power[k] + alphaH*( P0 + 10*log(dataSize) ) + betaH;}
 							else{
-								Power[k] = Power[k] + 4*( -5 + 10*log(dataSize)) + 1.2;}
+								Power[k] = Power[k] + alphaL*( P0 + 10*log(dataSize) ) + betaL;}
 						}
 						//Initialize.
 						dataSize = 0;
 						
 						if (i == (L - 1)){
 							ATR[k] = j / L;
-							if (Power[k] <= 4263.7){
-								cout << "Of0: " << of0 << " Of1: " << of1 << " Of2: " << of2 << " Of3: " << of3 << " Of4: " << of4 << endl;
+							if (Power[k] <= 610){
+								cout << "Of0: " << of0 << ", Of1: " << of1 << ", Of2: " << of2 << ", Of3: " << of3 << ", Of4: " << of4 << endl;
 								cout << "ATR: " << ATR[k] << endl;
-								for ( i = 0; i < L; i++){
-									cout << x[i];
-								}
-								//cout << "Data size: " << dataSize << endl;
+								cout << "Power: " << Power[k] << endl;
+							}
+							if (Power[k] >= 50000){
+								cout << "Of0: " << of0 << ", Of1: " << of1 << ", Of2: " << of2 << ", Of3: " << of3 << ", Of4: " << of4 << endl;
+								cout << "ATR: " << ATR[k] << endl;
+								cout << "Power: " << Power[k] << endl;
+							}
+							if (ATR[k] >= 1.2){
+								cout << "Of0: " << of0 << ", Of1: " << of1 << ", Of2: " << of2 << ", Of3: " << of3 << ", Of4: " << of4 << endl;
+								cout << "ATR: " << ATR[k] << endl;
+								cout << "Power: " << Power[k] << endl;
 							}
 							k++;
 							

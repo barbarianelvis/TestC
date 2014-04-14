@@ -9,6 +9,7 @@ struct app{
 	int period;
 	int dataSize;
 	bool isUsed;
+	bool isLargest;
 	//struct app *next;
 };
 
@@ -64,18 +65,25 @@ int main(){
 	app App0, App1, App2, App3, App4;
 	//Type in your own periods, data size, and the threshold.
 	App0.period = 2,
-	App1.period = 3,
-	App2.period = 5,
-	App3.period = 6,
-	App4.period = 8;
+	App1.period = 5,
+	App2.period = 30,
+	App3.period = 60,
+	App4.period = 240;
 	
-	App0.dataSize = 2;
+	App0.dataSize = 4;
 	App1.dataSize = 3;
-	App2.dataSize = 5;
+	App2.dataSize = 20;
 	App3.dataSize = 8;
-	App4.dataSize = 10;
+	App4.dataSize = 4;
 	
-	int threshold = 50;
+	int threshold = 26;
+	double P0 = -4;
+	//Type in the parameters of power characteristics
+	
+	double alphaH = 54;
+	double betaH = 1.5;
+	double alphaL = 7.2;
+	double betaL = 1.6;
 	//=========================================================
 	App0.isUsed = false;
 	App1.isUsed = false;
@@ -83,12 +91,33 @@ int main(){
 	App3.isUsed = false;
 	App4.isUsed = false;
 	
+	App0.isLargest = false;
+	App1.isLargest = false;
+	App2.isLargest = false;
+	App3.isLargest = false;
+	App4.isLargest = false;
+	
 	int period[] = { App0.period, App1.period, App2.period, App3.period, App4.period };
 	int dataSize[5] = { App0.dataSize, App1.dataSize, App2.dataSize, App3.dataSize, App4.dataSize };
 	
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
-	int X[120] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
+	int X[240] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
 	
+	if (App0.dataSize >= App1.dataSize && App0.dataSize >= App2.dataSize && App0.dataSize >= App3.dataSize && App0.dataSize >= App4.dataSize){
+		App0.isLargest = true;
+	}
+	if (App1.dataSize >= App0.dataSize && App1.dataSize >= App2.dataSize && App1.dataSize >= App3.dataSize && App1.dataSize >= App4.dataSize){
+		App1.isLargest = true;
+	}
+	if (App2.dataSize >= App0.dataSize && App2.dataSize >= App1.dataSize && App2.dataSize >= App3.dataSize && App2.dataSize >= App4.dataSize){
+		App2.isLargest = true;
+	}
+	if (App3.dataSize >= App1.dataSize && App3.dataSize >= App2.dataSize && App3.dataSize >= App0.dataSize && App3.dataSize >= App4.dataSize){
+		App3.isLargest = true;
+	}
+	if (App4.dataSize >= App1.dataSize && App4.dataSize >= App2.dataSize && App4.dataSize >= App3.dataSize && App4.dataSize >= App0.dataSize){
+		App4.isLargest = true;
+	}
 	//========================================================= 
 	//Compute GCD&LCM for all traffic streams
     int L = accumulate ( period, period+5, 1, lcm );
@@ -126,9 +155,9 @@ int main(){
 		cout << X[i] << " ";
 		if (X[i] != 0){
 			if (X[i] > threshold)
-				{originalPower = originalPower + 61*( 10*log(X[i]) -5 ) + 0.52;}
+				{originalPower = originalPower + alphaH*( P0 + 10*log(X[i]) ) + betaH;}
 			else
-				{originalPower = originalPower + 4*( 10*log(X[i]) -5 ) + 1.2;}
+				{originalPower = originalPower + alphaL*( P0 + 10*log(X[i]) ) + betaL;}
 		}
 	} 
 	cout << "}" << endl;
@@ -156,9 +185,25 @@ int main(){
 				of1 = period[1] - findGCDOffset( App1.period, period );
 				App1.isUsed = true;
 			}
-			else 
-				break;
-			
+			else{
+				if (App0.isLargest == true){
+					of0 = 1;
+				}
+				else if (App1.isLargest == true){
+					of1 = 1;
+				}
+				else if (App2.isLargest == true){
+					of2 = 1;
+				}
+				else if (App3.isLargest == true){
+					of3 = 1;
+				}
+				else if (App4.isLargest == true){
+					of4 = 1;
+				}
+				X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
+				break;		
+			} 			
 			X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
 		}
 	}
@@ -169,9 +214,9 @@ int main(){
 		cout << X[i] << " ";
 		if ( X[i] != 0 ){
 			if ( X[i] > threshold )
-				{modifiedPower = modifiedPower + 61*(-5 + 10*log(X[i])) + 0.52;}
+				{modifiedPower = modifiedPower + alphaH*( P0 + 10*log(X[i])) + betaH;}
 			else
-				{modifiedPower = modifiedPower + 4*(-5 + 10*log(X[i])) + 1.2;}
+				{modifiedPower = modifiedPower + alphaL*( P0 + 10*log(X[i])) + betaL;}
 		}
 	}
 	cout << "}" << endl;
