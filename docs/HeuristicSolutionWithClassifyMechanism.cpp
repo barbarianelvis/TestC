@@ -44,7 +44,7 @@ int GenerateMixedUplinkArray(int order, int period[], int dataSize[], int of0, i
 	return dataToTransmit;
 }
 
-int findGCDOffset(int localPeriod, int period[]){
+int findGCDOffset(int localPeriod, int period[], int Pmin[5][5] ){
 	int temp = localPeriod;
 	int G = 0;
 	for ( int t=0; t < sizeof(period)/4; t++ ){
@@ -65,19 +65,19 @@ int main(){
 	app App0, App1, App2, App3, App4;
 	//Type in your own periods, data size, and the threshold.
 	App0.period = 2,
-	App1.period = 3,
-	App2.period = 4,
-	App3.period = 6,
-	App4.period = 12;
+	App1.period = 5,
+	App2.period = 30,
+	App3.period = 60,
+	App4.period = 240;
 	
-	App0.dataSize = 2;
-	App1.dataSize = 2;
-	App2.dataSize = 4;
-	App3.dataSize = 5;
-	App4.dataSize = 10;
+	App0.dataSize = 4;
+	App1.dataSize = 3;
+	App2.dataSize = 20;
+	App3.dataSize = 8;
+	App4.dataSize = 4;
 	
-	int threshold = 15;
-	double P0 = -5;
+	int threshold = 26;
+	double P0 = -4;
 	//Type in the parameters of power characteristics
 	
 	double alphaH = 54;
@@ -99,12 +99,9 @@ int main(){
 	
 	int period[] = { App0.period, App1.period, App2.period, App3.period, App4.period };
 	int dataSize[5] = { App0.dataSize, App1.dataSize, App2.dataSize, App3.dataSize, App4.dataSize };
-	int checkGCDOffsets[] = {0};
 	
-	//Setup the traffic streams for all periods
-	//Length of array should be the size number of LCM
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
-	int X[12] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
+	int X[240] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
 	
 	if (App0.dataSize >= App1.dataSize && App0.dataSize >= App2.dataSize && App0.dataSize >= App3.dataSize && App0.dataSize >= App4.dataSize){
 		App0.isLargest = true;
@@ -167,30 +164,64 @@ int main(){
 	cout << "}" << endl;
 	cout << "Total power consumption: " << originalPower << "mW.\n";
 	
+	    //Setup the multi-array for storing multiple classes
+    //int Pmin[5][5] = {0};
+    
+	//Setup the check list array for store multiple classes
+    int checkList[5] = {1,1,1,1,1};
+    int Pmin[5][5] = {0};
+	//Classify multiple period with same GCD using checkList[5];
+	int k = 0, shift = 0, m = 0;
+    for ( i=0; i<length; i++){
+    	//cout << checkList[0] << checkList[1] << checkList[2] << checkList[3] << checkList[4] << endl;
+    	if (checkList[i] == 1){
+    		for (int j=i; j<length; j++){
+    			if ( period[j]%period[i]==0 && checkList[j] == 1 ){
+    				Pmin[k][m] = period[j];
+    				checkList[j] = 0;
+    				m++;
+    			}
+    			else
+    				shift++;
+    		}
+    		k++;
+    		shift = 0;
+    		m = 0;
+    	}
+    	if (i == length-1 && checkList[length-1]==1)
+    		{Pmin[k][0] = period[i];}
+    	if (checkList[0]==0 && checkList[1]==0 && checkList[2]==0 && checkList[3]==0 && checkList[4]==0)
+    		{break;}
+    }
+    
+    cout << Pmin[0][0] << "," << Pmin[0][1] << "," << Pmin[0][2] << "," << Pmin[0][3]<< endl;
+	cout << Pmin[1][0] << "," << Pmin[1][1] << "," << Pmin[1][2] << endl;
+	//cout << Pmin[2][0] << "," << Pmin[2][1] << "," << Pmin[2][2] << endl;
+	
 	for (int d = 0; d < lengthX; d++ ){
     	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
     	if ( X[d] > 0 )
     		{ActiveTime++;}
     	while (X[d] > threshold){
 			gap = X[d] - threshold;
-			if ( App2.isUsed == false && (d%App2.period)==0 ){
-				of2 = findGCDOffset( App2.period, period );
-				App2.isUsed = true;
-			}
-			else if ( App4.isUsed == false && (d%App4.period)==0 ){
-				of4 = findGCDOffset( App4.period, period );
+			if ( App4.isUsed == false && (d%App4.period)==0 ){
+				of4 = findGCDOffset( App4.period, period, Pmin );
 				App4.isUsed = true;
 			}
 			else if ( App3.isUsed == false && (d%App3.period)==0 ){
-				of3 = findGCDOffset( App3.period, period );
+				of3 = findGCDOffset( App3.period, period, Pmin );
 				App3.isUsed = true;
 			}
+			else if ( App2.isUsed == false && (d%App2.period)==0 ){
+				of2 = findGCDOffset( App2.period, period, Pmin );
+				App2.isUsed = true;
+			}
 			else if ( App1.isUsed == false && (d%App1.period)==0 ){
-				of1 = findGCDOffset( App1.period, period );
+				of1 = findGCDOffset( App1.period, period, Pmin );
 				App1.isUsed = true;
 			}
 			else{
-			/*	if (App0.isLargest == true){
+				/*if (App0.isLargest == true){
 					of0 = 1;
 				}
 				else if (App1.isLargest == true){
@@ -246,41 +277,9 @@ int main(){
 
 
 
-    /*
-    //Setup the multi-array for storing multiple classes
-    //int Pmin[5][5] = {0};
     
-	//Setup the check list array for store multiple classes
-    int checkList[5] = {1,1,1,1,1};
-    
-	//Classify multiple period with same GCD using checkList[5];
-	int k = 0, shift = 0, m = 0;
-    for ( i=0; i<length; i++){
-    	cout << checkList[0] << checkList[1] << checkList[2] << checkList[3] << checkList[4] << endl;
-    	if (checkList[i] == 1){
-    		for (int j=i; j<length; j++){
-    			if ( period[j]%period[i]==0 && checkList[j] == 1 ){
-    				Pmin[k][m] = period[j];
-    				checkList[j] = 0;
-    				m++;
-    			}
-    			else
-    				shift++;
-    		}
-    		k++;
-    		shift = 0;
-    		m = 0;
-    	}
-    	if (i == length-1 && checkList[length-1]==1)
-    		{Pmin[k][0] = period[i];}
-    	if (checkList[0]==0 && checkList[1]==0 && checkList[2]==0 && checkList[3]==0 && checkList[4]==0)
-    		{break;}
-    }
-    
-    cout << Pmin[0][0] << "," << Pmin[0][1] << "," << Pmin[0][2] << endl;
-	cout << Pmin[1][0] << "," << Pmin[1][1] << "," << Pmin[1][2] << endl;
-	//cout << Pmin[2][0] << "," << Pmin[2][1] << "," << Pmin[2][2] << endl;
-	*/
+
+	
 
 
 

@@ -2,6 +2,7 @@
 #include <numeric>
 #include <cstdlib>
 #include <math.h>
+#include <time.h>
 
 using namespace std;
 
@@ -64,17 +65,19 @@ int main(){
 	//Setup indivisual applications
 	app App0, App1, App2, App3, App4;
 	//Type in your own periods, data size, and the threshold.
-	App0.period = 2,
-	App1.period = 3,
-	App2.period = 4,
-	App3.period = 6,
-	App4.period = 12;
+	srand((unsigned)time(NULL)); //取亂數種子
 	
-	App0.dataSize = 2;
-	App1.dataSize = 2;
-	App2.dataSize = 4;
-	App3.dataSize = 5;
-	App4.dataSize = 10;
+	App0.period = rand()%240+2,
+	App1.period = rand()%240+2,
+	App2.period = rand()%240+2,
+	App3.period = rand()%240+2,
+	App4.period = rand()%240+2;
+	
+	App0.dataSize = rand()%10+1;
+	App1.dataSize = rand()%10+1;
+	App2.dataSize = rand()%10+1;
+	App3.dataSize = rand()%10+1;
+	App4.dataSize = rand()%10+1;
 	
 	int threshold = 15;
 	double P0 = -5;
@@ -99,12 +102,12 @@ int main(){
 	
 	int period[] = { App0.period, App1.period, App2.period, App3.period, App4.period };
 	int dataSize[5] = { App0.dataSize, App1.dataSize, App2.dataSize, App3.dataSize, App4.dataSize };
-	int checkGCDOffsets[] = {0};
 	
 	//Setup the traffic streams for all periods
 	//Length of array should be the size number of LCM
+	int L = accumulate ( period, period+5, 1, lcm );
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
-	int X[12] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
+	int X[] = {0}, ActiveTime = 0, lengthX = L;
 	
 	if (App0.dataSize >= App1.dataSize && App0.dataSize >= App2.dataSize && App0.dataSize >= App3.dataSize && App0.dataSize >= App4.dataSize){
 		App0.isLargest = true;
@@ -124,7 +127,7 @@ int main(){
 	
 	//========================================================= 
 	//Compute GCD&LCM for all traffic streams
-    int L = accumulate ( period, period+5, 1, lcm );
+    //int L = accumulate ( period, period+5, 1, lcm );
     
     while ( i < length ){
     	if (i==0){
