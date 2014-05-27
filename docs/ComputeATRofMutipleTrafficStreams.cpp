@@ -25,19 +25,19 @@ int main(){
 	//Setup the parameters of indivisual traffic streams
 	//Type in your own periods
 	int p0 = 2,
-		p1 = 3,
-		p2 = 4,
-		p3 = 6,
-		p4 = 12;
+		p1 = 5,
+		p2 = 30,
+		p3 = 60,
+		p4 = 240;
 
-	int d0 = 2,
-		d1 = 2,
-		d2 = 10,
-		d3 = 5,
-		d4 = 4;
+	int d0 = 3,
+		d1 = 15,
+		d2 = 4,
+		d3 = 8,
+		d4 = 10;
 		
-	int threshold = 12;
-	double P0 = -5;
+	int threshold = 26;
+	double P0 = -4;
 	
 	double alphaH = 54;
 	double betaH = 1.5;
@@ -54,12 +54,17 @@ int main(){
 
 	//Setup the traffic streams for all periods
 	//Length of each array should be the number of LCM
-	int x0[12] = { 0 }, x1[12] = { 0 }, x2[12] = { 0 }, x3[12] = { 0 }, x4[12] = { 0 }, x[12] = { 0 };
+	int x0[240] = { 0 }, 
+		x1[240] = { 0 }, 
+		x2[240] = { 0 }, 
+		x3[240] = { 0 }, 
+		x4[240] = { 0 }, 
+		 x[240] = { 0 };
 
 	//Length of ATR Array should be the number of p0*p1*p2*p3
 	//Type in the length of ATR array 
-	double ATR[144] = {0}, j = 0;
-	double Power[144] = {0}, dataSize = 0;
+	double ATR[18000] = {0}, j = 0;
+	double Power[18000] = {0}, dataSize = 0;
 	int of0 = 0, of1 = 0, of2 = 0, of3 = 0, of4 = 0;
 	int k = 0;
 
@@ -138,17 +143,12 @@ int main(){
 						
 						if (i == (L - 1)){
 							ATR[k] = j / L;
-							if (Power[k] <= 610){
+							if (Power[k] <= 175){
 								cout << "Of0: " << of0 << ", Of1: " << of1 << ", Of2: " << of2 << ", Of3: " << of3 << ", Of4: " << of4 << endl;
 								cout << "ATR: " << ATR[k] << endl;
 								cout << "Power: " << Power[k] << endl;
 							}
 							if (Power[k] >= 50000){
-								cout << "Of0: " << of0 << ", Of1: " << of1 << ", Of2: " << of2 << ", Of3: " << of3 << ", Of4: " << of4 << endl;
-								cout << "ATR: " << ATR[k] << endl;
-								cout << "Power: " << Power[k] << endl;
-							}
-							if (ATR[k] >= 1.2){
 								cout << "Of0: " << of0 << ", Of1: " << of1 << ", Of2: " << of2 << ", Of3: " << of3 << ", Of4: " << of4 << endl;
 								cout << "ATR: " << ATR[k] << endl;
 								cout << "Power: " << Power[k] << endl;

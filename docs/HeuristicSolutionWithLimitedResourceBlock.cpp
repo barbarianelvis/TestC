@@ -44,19 +44,30 @@ int GenerateMixedUplinkArray(int order, int period[], int dataSize[], int of0, i
 	return dataToTransmit;
 }
 
-int findGCDOffset(int localPeriod, int period[]){
+int findGCDOffset(int localPeriod, int period[], int checkGCDOffsets[]){
 	int temp = localPeriod;
 	int G = 0;
+	bool GCDisUsed = false;
 	for ( int t=0; t < sizeof(period)/4; t++ ){
 		if ( localPeriod == period[t] )
 			{ t++; }
 		else{
 			G = gcd ( localPeriod, period[t] );
-			if ( G !=1 && G <= temp )
-				{ temp = G;}
+			if ( G !=1 && G <= temp ){
+				if (sizeof(checkGCDOffsets)==0)
+					temp = G;
+				else{
+					for (t=0; t < sizeof(checkGCDOffsets)/4; t++ ){
+						if ( G== checkGCDOffsets[t] )
+							temp = G*2;
+						else
+							temp = G;
+					}
+				}		
+			}
 		}
 	}
-	//cout << "Offset is " << temp << " for refined uplink.\n";
+	cout << "Offset is " << temp << " for refined uplink.\n";
 	return temp;
 }
 
@@ -65,19 +76,19 @@ int main(){
 	app App0, App1, App2, App3, App4;
 	//Type in your own periods, data size, and the threshold.
 	App0.period = 2,
-	App1.period = 3,
-	App2.period = 4,
-	App3.period = 6,
-	App4.period = 12;
+	App1.period = 5,
+	App2.period = 30,
+	App3.period = 60,
+	App4.period = 240;
 	
-	App0.dataSize = 2;
-	App1.dataSize = 2;
+	App0.dataSize = 3;
+	App1.dataSize = 15;
 	App2.dataSize = 4;
-	App3.dataSize = 5;
+	App3.dataSize = 8;
 	App4.dataSize = 10;
 	
-	int threshold = 15;
-	double P0 = -5;
+	int threshold = 26;
+	double P0 = -4;
 	//Type in the parameters of power characteristics
 	
 	double alphaH = 54;
@@ -104,7 +115,7 @@ int main(){
 	//Setup the traffic streams for all periods
 	//Length of array should be the size number of LCM
 	int G = 0, i = 0, temp = 0, length = sizeof( period )/4;
-	int X[12] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
+	int X[240] = {0}, ActiveTime = 0, lengthX = sizeof(X)/4;
 	
 	if (App0.dataSize >= App1.dataSize && App0.dataSize >= App2.dataSize && App0.dataSize >= App3.dataSize && App0.dataSize >= App4.dataSize){
 		App0.isLargest = true;
@@ -148,7 +159,7 @@ int main(){
     //========================================================= 
 	//Setup each array with each period via offset = 0.
 	int of0=0, of1=0, of2=0, of3=0, of4=0;
-	int gap = 0;
+	//int gap = 0;
 	for (int d = 0; d < lengthX; d++ ){
     	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
 	}
@@ -167,26 +178,45 @@ int main(){
 	cout << "}" << endl;
 	cout << "Total power consumption: " << originalPower << "mW.\n";
 	
+	int count = 0;
 	for (int d = 0; d < lengthX; d++ ){
+		of0 = 0;
+		of1 = 4; 
+		of2 = 0;
+		of3 = 0;
+		of4 = 0;
+		
     	X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
     	if ( X[d] > 0 )
     		{ActiveTime++;}
+    		
+    	/* 
     	while (X[d] > threshold){
-			gap = X[d] - threshold;
-			if ( App2.isUsed == false && (d%App2.period)==0 ){
-				of2 = findGCDOffset( App2.period, period );
-				App2.isUsed = true;
-			}
-			else if ( App4.isUsed == false && (d%App4.period)==0 ){
-				of4 = findGCDOffset( App4.period, period );
+			//gap = X[d] - threshold;
+			
+			if ( App4.isUsed == false && (d%App4.period)==0 ){
+				of4 = findGCDOffset( App4.period, period, checkGCDOffsets );
+				checkGCDOffsets[count] = of4;
+				count++;
 				App4.isUsed = true;
-			}
+			} 
 			else if ( App3.isUsed == false && (d%App3.period)==0 ){
-				of3 = findGCDOffset( App3.period, period );
+				of3 = findGCDOffset( App3.period, period, checkGCDOffsets );
+				checkGCDOffsets[count] = of3;
+				count++;
 				App3.isUsed = true;
 			}
-			else if ( App1.isUsed == false && (d%App1.period)==0 ){
-				of1 = findGCDOffset( App1.period, period );
+			else if ( App2.isUsed == false && (d%App2.period)==0 ){
+				of2 = findGCDOffset( App2.period, period, checkGCDOffsets );
+				checkGCDOffsets[count] = of2;
+				count++;
+				App2.isUsed = true;
+				
+			}
+			else if ( App1.isUsed == false && (d%App1.period)==0, checkGCDOffsets ){
+				of1 = findGCDOffset( App1.period, period ,checkGCDOffsets );
+				checkGCDOffsets[count] = of1;
+				count++;
 				App1.isUsed = true;
 			}
 			else{
@@ -205,11 +235,12 @@ int main(){
 				else if (App4.isLargest == true){
 					of4 = 1;
 				}
-				X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );*/
+				X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
 				break;		
-			} 			
-			X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
-		}
+			}
+			*/			
+			//X[d] = GenerateMixedUplinkArray( d , period, dataSize, of0, of1, of2, of3, of4 );
+		//}
 	}
 	
 	double modifiedPower = 0;
@@ -228,6 +259,10 @@ int main(){
 	cout << "Improved Power efficiency: " << 100*double(originalPower-modifiedPower)/ double(originalPower) << "%" << endl;
 	
 	cout << "ATR = " << double(ActiveTime)/double(lengthX) << endl;
+	for (i=0; i < sizeof(checkGCDOffsets)/4; i++){
+		cout << checkGCDOffsets[i] << " ";
+	}
+	cout << endl;
 	
 	//Calculate the GCD of each PeroidMin array.
 	//k = 0, i = 0;
