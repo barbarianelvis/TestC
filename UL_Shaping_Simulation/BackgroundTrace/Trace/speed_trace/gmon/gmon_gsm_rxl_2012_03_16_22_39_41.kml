@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id='rxl69'>
+  <IconStyle>
+  <color>ff0000ff</color>
+	<scale>0.5</scale>
+	<Icon>
+	  <href>http://gmon.ist-chef.com/iconrxl.png</href>
+	</Icon>
+  </IconStyle>
+</Style>
+<Style id='rxl76'>
+  <IconStyle>
+  <color>ff00ffff</color>
+	<scale>0.5</scale>
+	<Icon>
+	  <href>http://gmon.ist-chef.com/iconrxl.png</href>
+	</Icon>
+  </IconStyle>
+</Style>
+<Style id='rxl80'>
+  <IconStyle>
+  <color>ff00ff00</color>
+	<scale>0.5</scale>
+	<Icon>
+	  <href>http://gmon.ist-chef.com/iconrxl.png</href>
+	</Icon>
+  </IconStyle>
+</Style>
+<Style id='rxl92'>
+  <IconStyle>
+  <color>ffff0000</color>
+	<scale>0.5</scale>
+	<Icon>
+	  <href>http://gmon.ist-chef.com/iconrxl.png</href>
+	</Icon>
+  </IconStyle>
+</Style>
+<Style id='rxl113'>
+  <IconStyle>
+  <color>ff000000</color>
+	<scale>0.5</scale>
+	<Icon>
+	  <href>http://gmon.ist-chef.com/iconrxl.png</href>
+	</Icon>
+  </IconStyle>
+</Style>
+<Style id='handover'>
+  <IconStyle>
+  <color>ffffffff</color>
+	<scale>4.0</scale>
+	<Icon>
+	  <href>http://gmon.ist-chef.com/iconrxl.png</href>
+	</Icon>
+  </IconStyle>
+</Style>
+  <Placemark>
+	<description><![CDATA[CID: <b>34330</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-91 dBm</b><br/>Time: <b>22:39:42 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61544,24.10383</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>34330</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-91 dBm</b><br/>Time: <b>22:39:43 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61530,24.10374</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>34301</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:39:44 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61525,24.10353</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>34301</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:39:45 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61521,24.10332</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>34301</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:39:46 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61518,24.10310</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>34301</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:39:47 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61516,24.10288</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:39:48 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61511,24.10267</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:39:49 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61507,24.10242</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:39:50 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61505,24.10219</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:39:51 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61500,24.10197</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:39:52 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61496,24.10174</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:39:53 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61492,24.10151</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:39:54 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61489,24.10124</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:39:55 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61487,24.10101</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:39:56 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61485,24.10077</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:39:57 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61482,24.10049</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:39:58 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61479,24.10024</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:39:59 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61476,24.10000</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:40:00 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61474,24.09974</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:40:01 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61472,24.09949</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:40:02 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61470,24.09922</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:40:03 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61468,24.09896</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:40:04 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61464,24.09869</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:40:05 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61462,24.09841</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:40:06 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61461,24.09813</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:40:07 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61456,24.09787</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:08 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61453,24.09759</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:09 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61449,24.09729</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:10 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61445,24.09699</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:11 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61442,24.09668</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:12 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61439,24.09639</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:13 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61436,24.09608</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:14 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61433,24.09577</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:15 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61429,24.09546</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:16 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61427,24.09512</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:17 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61424,24.09478</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:18 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61419,24.09442</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:19 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61416,24.09409</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:20 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61412,24.09374</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:21 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61409,24.09338</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:22 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61407,24.09303</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:23 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61403,24.09269</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:24 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61395,24.09196</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:25 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61395,24.09196</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-75 dBm</b><br/>Time: <b>22:40:26 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61391,24.09158</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-75 dBm</b><br/>Time: <b>22:40:27 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61388,24.09121</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-75 dBm</b><br/>Time: <b>22:40:28 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61385,24.09084</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:29 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61382,24.09044</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:30 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61378,24.09004</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:31 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61374,24.08966</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:32 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61369,24.08926</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:33 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61365,24.08887</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:34 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61361,24.08847</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:35 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61356,24.08810</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:36 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61352,24.08770</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:37 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61349,24.08730</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:38 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61346,24.08689</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:39 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61343,24.08651</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-77 dBm</b><br/>Time: <b>22:40:40 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61339,24.08608</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-79 dBm</b><br/>Time: <b>22:40:41 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61336,24.08567</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-79 dBm</b><br/>Time: <b>22:40:42 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61331,24.08524</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-79 dBm</b><br/>Time: <b>22:40:43 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61326,24.08486</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-79 dBm</b><br/>Time: <b>22:40:44 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61323,24.08444</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-79 dBm</b><br/>Time: <b>22:40:45 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61318,24.08401</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-79 dBm</b><br/>Time: <b>22:40:46 2012/03/16</b>]]></description>
+	<styleUrl>#rxl80</styleUrl>
+	 <Point>
+	  <coordinates>120.61314,24.08359</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:40:47 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61309,24.08319</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:40:48 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61303,24.08275</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:40:49 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61298,24.08231</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:40:50 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61292,24.08183</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:40:51 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61288,24.08142</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-83 dBm</b><br/>Time: <b>22:40:52 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61282,24.08099</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:40:53 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61275,24.08054</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:40:54 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61269,24.08010</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:40:55 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61265,24.07964</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:40:56 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61259,24.07921</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:40:57 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61251,24.07875</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:40:58 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61243,24.07825</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:40:59 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61234,24.07782</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:41:00 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61224,24.07736</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:41:01 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61215,24.07689</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:41:02 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61204,24.07643</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:41:03 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61195,24.07599</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:41:04 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61182,24.07553</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:41:05 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61170,24.07506</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>24347</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:41:06 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61158,24.07461</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>44702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-87 dBm</b><br/>Time: <b>22:41:07 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61147,24.07419</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>44702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-71 dBm</b><br/>Time: <b>22:41:08 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61136,24.07375</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>44702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-71 dBm</b><br/>Time: <b>22:41:09 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61121,24.07326</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>44702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-71 dBm</b><br/>Time: <b>22:41:10 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61109,24.07278</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>44702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-73 dBm</b><br/>Time: <b>22:41:11 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61094,24.07226</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>44702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-73 dBm</b><br/>Time: <b>22:41:12 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61078,24.07180</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-73 dBm</b><br/>Time: <b>22:41:13 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61046,24.07087</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-71 dBm</b><br/>Time: <b>22:41:14 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61046,24.07087</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-71 dBm</b><br/>Time: <b>22:41:15 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61032,24.07041</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-71 dBm</b><br/>Time: <b>22:41:16 2012/03/16</b>]]></description>
+	<styleUrl>#rxl76</styleUrl>
+	 <Point>
+	  <coordinates>120.61014,24.06997</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:41:17 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60996,24.06950</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:41:18 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60978,24.06904</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-81 dBm</b><br/>Time: <b>22:41:19 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60961,24.06862</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-85 dBm</b><br/>Time: <b>22:41:20 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60943,24.06815</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-85 dBm</b><br/>Time: <b>22:41:21 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60926,24.06771</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-85 dBm</b><br/>Time: <b>22:41:22 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60909,24.06725</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-93 dBm</b><br/>Time: <b>22:41:23 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60893,24.06682</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-93 dBm</b><br/>Time: <b>22:41:24 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60877,24.06637</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-93 dBm</b><br/>Time: <b>22:41:25 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60862,24.06593</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-93 dBm</b><br/>Time: <b>22:41:26 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60849,24.06551</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-93 dBm</b><br/>Time: <b>22:41:27 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60833,24.06509</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-93 dBm</b><br/>Time: <b>22:41:28 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60817,24.06466</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:41:29 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:41:30 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-93 dBm</b><br/>Time: <b>22:41:31 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:32 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:33 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>4702</b><br/>LAC: <b>10473</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:34 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:35 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:36 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:37 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:38 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:39 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:40 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:41 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:42 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:43 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:44 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:45 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:46 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>HSDPA</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:47 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.60800,24.06423</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:48 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:49 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:41:50 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:51 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:52 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-113 dBm</b><br/>Time: <b>22:41:53 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:41:54 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:41:55 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:41:56 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:41:57 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:41:58 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:41:59 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:00 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:01 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:02 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:03 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:04 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:05 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:06 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:07 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>46692</b><br/>TYPE: <b>UMTS</b><br/>RXL: <b>-89 dBm</b><br/>Time: <b>22:42:08 2012/03/16</b>]]></description>
+	<styleUrl>#rxl92</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:09 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:10 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:11 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:12 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:13 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:14 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:15 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:16 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:17 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:18 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:19 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:20 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:21 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:22 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:23 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:24 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:25 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:26 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:27 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:28 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:29 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:30 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:31 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:32 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:33 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:34 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:35 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:36 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:37 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:38 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:39 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:40 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:41 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:42 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:43 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:44 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:45 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:46 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:47 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:48 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:49 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:50 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:51 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:52 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:53 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:54 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:55 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:56 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:57 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:58 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:42:59 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:00 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:01 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:02 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:03 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:04 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:05 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:06 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:07 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:08 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:09 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:10 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:11 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:12 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:13 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:14 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:15 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:16 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:17 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+  <Placemark>
+	<description><![CDATA[CID: <b>54126</b><br/>LAC: <b>10421</b><br/>NET: <b>00000</b><br/>TYPE: <b>n/a</b><br/>RXL: <b>-115 dBm</b><br/>Time: <b>22:43:18 2012/03/16</b>]]></description>
+	<styleUrl>#rxl113</styleUrl>
+	 <Point>
+	  <coordinates>120.61786,24.10902</coordinates>
+	 </Point>
+  </Placemark>
+</Document>
+</kml>

@@ -1,0 +1,6 @@
+ BSSID;LAT;LON;SSID;Crypt;Beacon Interval;Connection Mode;Channel;RXL;Date;Time
+18:87:96:FD:CB:B2;NaN;NaN;HTC ponpon;WPA2;-5094;Infra;6;-95;2012/03/16;22:35:53
+38:E7:D8:0E:B3:94;NaN;NaN;HTC network;WpaPsk;-5091;Infra;1;-92;2012/03/16;22:35:46
+4C:54:99:67:92:70;NaN;NaN;Rong;Wep;-5094;Infra;1;-95;2012/03/16;22:35:50
+50:CC:F8:2C:47:B9;NaN;NaN;AndroidHotspot4158;Open;-5071;Infra;6;-72;2012/03/16;22:35:46
+B0:EC:71:87:EE:D0;NaN;NaN;AndroidAP_Elvis;WPA2;-5085;Infra;6;-86;2012/03/16;22:35:56

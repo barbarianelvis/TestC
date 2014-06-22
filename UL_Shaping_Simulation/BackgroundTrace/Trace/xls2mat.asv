@@ -1,0 +1,11 @@
+temp = xlsread('IM_LINE.xlsx', 'Total_CDF');
+IM_LINE_Size = temp(:,3);
+IM_LINE_IAT = temp(1:length(temp)-1,5);
+
+temp = xlsread('IM_LINE.xlsx', 'Uplink_CDF');
+IM_LINE_UL_Size = temp(:,3);
+IM_LINE_UL_IAT = temp(1:length(temp)-1,5);
+
+temp = xlsread('IM_LINE.xlsx', 'Downlink_CDF');
+IM_LINE_DL_Size = temp(:,3);
+IM_LINE_DL_IAT = temp(1:length(temp)-1,5);

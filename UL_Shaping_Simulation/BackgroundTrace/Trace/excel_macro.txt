@@ -1,0 +1,90 @@
+Sub generate()
+
+    
+    IP = "10.34.158.65"
+    
+    Sheets(Sheets.Count).Name = "Total+Retransmission"
+    Sheets.Add After:=Sheets(Sheets.Count)
+    Sheets(Sheets.Count).Name = "Total+Retransmission_CDF"
+    Sheets(1).Select
+    Range("B:B,F:F").Select
+    Selection.Copy
+    Sheets(Sheets.Count).Select
+    ActiveSheet.Paste
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "=RC[-1]-16"
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "=ABS(R[1]C[-4]-RC[-4])"
+    Range("C1:E1").Select
+    h = ActiveSheet.UsedRange.Rows.Count
+    Selection.AutoFill Destination:=Selection.Resize(h, 3), Type:=xlFillDefault
+    Range("E1").Offset(h - 1, 0).Select
+    Selection.Clear
+    
+    
+    Sheets.Add After:=Sheets(Sheets.Count)
+    Sheets(Sheets.Count).Name = "Uplink"
+    Sheets(1).Select
+    ActiveSheet.UsedRange.AutoFilter Field:=3, Criteria1:=IP
+    ActiveSheet.UsedRange.Copy
+    Sheets(Sheets.Count).Select
+    ActiveSheet.Paste
+    Sheets(1).Select
+    ActiveSheet.UsedRange.AutoFilter Field:=3
+    
+    
+    Sheets.Add After:=Sheets(Sheets.Count)
+    Sheets(Sheets.Count).Name = "Uplink_CDF"
+    Sheets(3).Select
+    Range("B:B,F:F").Select
+    Selection.Copy
+    Sheets(Sheets.Count).Select
+    ActiveSheet.Paste
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "=RC[-1]-16"
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "=ABS(R[1]C[-4]-RC[-4])"
+    Range("C1:E1").Select
+    h = ActiveSheet.UsedRange.Rows.Count
+    Selection.AutoFill Destination:=Selection.Resize(h, 3), Type:=xlFillDefault
+    Range("E1").Offset(h - 1, 0).Select
+    Selection.Clear
+    
+    
+    Sheets.Add After:=Sheets(Sheets.Count)
+    Sheets(Sheets.Count).Name = "Downlink"
+    Sheets(1).Select
+    ActiveSheet.UsedRange.AutoFilter Field:=4, Criteria1:=IP
+    ActiveSheet.UsedRange.Copy
+    Sheets(Sheets.Count).Select
+    ActiveSheet.Paste
+    Sheets(1).Select
+    ActiveSheet.UsedRange.AutoFilter Field:=4
+    
+    Sheets.Add After:=Sheets(Sheets.Count)
+    Sheets(Sheets.Count).Name = "Downlink_CDF"
+    Sheets(5).Select
+    Range("B:B,F:F").Select
+    Selection.Copy
+    Sheets(Sheets.Count).Select
+    ActiveSheet.Paste
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "=RC[-1]-16"
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "=ABS(R[1]C[-4]-RC[-4])"
+    Range("C1:E1").Select
+    h = ActiveSheet.UsedRange.Rows.Count
+    Selection.AutoFill Destination:=Selection.Resize(h, 3), Type:=xlFillDefault
+    Range("E1").Offset(h - 1, 0).Select
+    Selection.Clear
+    
+    
+    
+End Sub
+

@@ -1,0 +1,29 @@
+1331904606 3.7mb train liujia v
+1331904737 3.7mb train liujia fail
+1331904823 3.7mb train liujia fail
+1331909284 thsrc fail
+1331909441 thsrc fail
+1331909608 thsrc fail
+1331909701 thsrc fail
+1331909886 thsrc partial chiayi stop fail
+1331909960 thsrc partial chiayi stop v
+1331910191 thsrc fail
+1331910323 thsrc fail
+1331910432 thsrc v
+1331910746 thsrc fail
+1331910888 thsrc fail
+1331910973 thsrc fail
+1331911088 thsrc fail
+1331911166 thsrc fail
+1331911273 thsrc fail
+1331911442 thsrc fail almost v
+1331911722 thsrc fail
+1331911830 thsrc v
+1331996580 car v
+1331996680 car v
+1331996786 car v 
+1331996855 10.5mb car v
+1331997030 10.5mb car v
+1331997270 3.7mb car fail
+1331997387 car v
+

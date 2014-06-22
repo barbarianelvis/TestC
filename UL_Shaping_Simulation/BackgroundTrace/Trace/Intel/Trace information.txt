@@ -1,0 +1,11 @@
+Hi Alex
+ 
+Sorry for the delayed email. Please find attached pcap files of our traces . They are collected using HTC Thunderbolt running only background applications (IM clients, weather stock update, gtalk, skype) for 24 hours. I attached 5 different days.
+ 
+Again there is no active IM or active traffic. We left the device in a spot with 4G coverage for 24 hours and collect all the packet activity. We did this for multiple days.
+ 
+Please let me know if you have any question.
+ 
+Thanks
+ 
+Ali

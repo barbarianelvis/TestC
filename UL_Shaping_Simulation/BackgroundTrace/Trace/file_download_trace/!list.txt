@@ -1,0 +1,15 @@
+
+shark_dump_1331819459	Big File Download (@LAB)
+shark_dump_1331820518	10.5MB Download test1 (30086 packets, 384 seconds) (@LAB) File: LTE for UMTS  Evolution to LTE Advanced  2 Edition.pdf
+shark_dump_1331821105	10.5MB Download test2 (29850 packets, 436 seconds) (@LAB)
+shark_dump_1331821651	10.5MB Download test3 (29356 packets, 284 seconds) (@LAB)
+shark_dump_1331822190	10.5MB Download test4 (29954 packets, 227 seconds) (@LAB)
+shark_dump_1331822751	10.5MB Download test5 (29276 packets, 298 seconds) (@LAB)
+shark_dump_1331823711	10.5MB Download test6 (29438 packets, 487 seconds) (@ED 8F WALKING) File: A Novel Time-Domain Sleep Mode Design for Energy-Efficient LTE.pdf
+
+shark_dump_1331825142	3.7MB Download test1 (10401 packets,  170 seconds) (@LAB)
+shark_dump_1331825327	3.7MB Download test2 (10331 packets,  310 seconds) (@LAB)
+shark_dump_1331825732	3.7MB Download test3 (10581 packets,  191 seconds) (@LAB)
+
+
+

@@ -1,0 +1,82 @@
+Trace file
+-------------------------------------------------------
+Android Background*		shark_dump_1322829498
+OS Background			shark_dump_1322829498
+GPS Backgorund			shark_dump_1323420044
+NTP Background			shark_dump_1323420044
+Facebook Background(60min)		shark_dump_1323236907
+Facebook Background2(60min)	shark_dump_1323355412
+Facebook Background3(30min)	shark_dump_1323420044
+HTC Weather Background(60min)
+HTC Weather Background2(60min)	shark_dump_1324355405
+Mix Background*			shark_dump_1324893993
+Mix Background2*			shark_dump_1325255243
+Mix Background3*			shark_dump_1325427648
+Mix Background4			shark_dump_1339869898
+
+
+IM Skype				shark_dump_1324972399
+IM Skypebackground		shark_dump_1324974786
+IM Whatsapp			shark_dump_1325077375
+IM Whatsapp Background		shark_dump_1325139587
+IM MSN(eBuddy)			shark_dump_1325161592
+IM Whatsapp Background2		shark_dump_1325163843
+IM MSN(eBuddy)2			shark_dump_1325246758
+IM Whatsapp2			shark_dump_1325249370
+IM Facebook Messenger		shark_dump_1325252106
+IM Skype2			shark_dump_1340006478
+
+
+VoIP Skype			shark_dump_1339854011
+
+
+
+Android Background : OS, NTP, GPS
+Mix Background : Android, Facebook(30min), News(60min), Weather(60min)
+Mix Background2 : Android Facebook(60min), News(120min), Weather(180min), Gmail, FacebookMessenger, Whatsapp, MSN(eBuddy)
+Mix Background3 : Android Facebook(30min), News(60min), Weather(60min), Whatsapp
+
+MSN(eBuddy) Background wiht 25seconds interval, maintaining only a few minutes after user entered idle
+----------------------------------------------------------------------------
+
+
+Original purpose
+-------------------------------------------------------
+shark_dump_1322829498	Android Background
+shark_dump_1323007576   	Android Background
+shark_dump_1323236907	Facebook Background(60min)
+shark_dump_1323355412 	 Facebook Background(60min)
+shark_dump_1323420044	Facebook Background(30min)
+shark_dump_1323866267	HTC News(120min) Weather(180min) Stock(240min) Backgorund
+shark_dump_1324020177	HTC News(60min)
+shark_dump_1324355405	HTC Weather(60min)(4 cities)
+shark_dump_1324893993	Android+ Facebook(30min)+ News(60min)+ Weather(60min)Background
+shark_dump_1325255243	Android Gmail FacebookMessenger Whatsapp MSN(eBuddy) Facebook(60min) News(120min) Weather(180min)
+shark_dump_1325427648	Android Facebook(30min) News(60min) Weather(60min) Whatsapp (packets valid before no.2769)
+
+
+shark_dump_1324970844	Skype chatting 15mins (without chatting connection setup, poor Internet status)
+shark_dump_1324972399	Skype chatting 10mins
+shark_dump_1324974786   	Skype Background
+shark_dump_1325077375	Whatsapp chatting 10mins
+shark_dump_1325139587	Whatsapp Background
+shark_dump_1325161592	MSN(eBuddy) chatting 10mins
+shark_dump_1325163843	MSN(eBuddy) Background + Whatsapp Background
+shark_dump_1325246758	MSN(eBuddy) chatting 5mins
+shark_dump_1325249370	Whatsapp chatting 5mins
+shark_dump_1325252106	Facebook Messenger 10mins
+
+shark_dump_1331735505	Android Background
+
+shark_dump_1339854011	Skype chatting + voice call in middle period (only UE has microphone)
+shark_dump_1339869898	Mixed Background (HTC news 30min + HTC weather 60min + HTC stock 60min + Facebook 60 min + Gmail + Whasapp + LINE + Skype)
+shark_dump_1340006478	Skype chatting
+shark_dump_1340009141	LINE chatting
+
+
+
+Capturing
+-------------------------------------------------------
+
+
+
